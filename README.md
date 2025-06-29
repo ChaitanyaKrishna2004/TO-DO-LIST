@@ -21,7 +21,7 @@ Design: Custom CSS with gradients and transitions
 
 Clone the repository
 
-bashgit clone https://github.com/yourusername/taskflow.git
+bashgit clone https://chaitanyakrishna2004.github.io/TO-DO-LIST/
 
 Open index.html in your browser
 Complete age verification and start managing tasks!
