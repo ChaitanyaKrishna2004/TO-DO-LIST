@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="app-title">My Todo App</h1>
+        <div class="user-section">
+            <span class="username">keval</span>
+            <div class="user-avatar">KE</div>
+            <button class="sign-out-btn">
+                <span>→</span>
+                Sign Out
+            </button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="tabs">
+            <div class="tab active" data-tab="todo">Todo (<span id="todoCount">5</span>)</div>
+            <div class="tab" data-tab="completed">Completed (<span id="completedCount">0</span>)</div>
+            <div class="tab" data-tab="archived">Archived (<span id="archivedCount">0</span>)</div>
+        </div>
+
+        <div class="task-form">
+            <input type="text" class="task-input" placeholder="Add your task (text-box)" id="taskInput">
+            <button class="submit-btn" onclick="addTask()">Submit</button>
+        </div>
+
+        <div class="task-list" id="taskList">
+            <!-- Tasks will be populated here -->
+        </div>
+
+        <div class="empty-state" id="emptyState" style="display: none;">
+            <h3>No tasks yet</h3>
+            <p>Add your first task above to get started!</p>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

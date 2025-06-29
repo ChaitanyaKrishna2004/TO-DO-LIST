@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+        <div class="logo-text">TaskFlow</div>
+            <div class="tag-line">Your Personal Productivity Companion</div>
+            <div class="age-notification">Age verification required for access</div>
+        </div>
+    </div>
+
+    <div class="verification-card">
+        <h2 class="card-title">Verify Your Identity</h2>
+        <form id="verificationForm">
+            <div class="form-group">
+                <label class="form-lable" for="fullName">FullName</label>
+                <input
+                    type="text"
+                    id="fullName"
+                    class="form-input"
+                    placeholder="Enter your full name"
+                >
+            </div>
+            <div class="form-group">
+                <label class="form-lable" for="dateOfBirth">Date of Birth</label>
+                <input
+                    type="date"
+                    id="dateOfBirth"
+                    class="form-input"
+                >
+            </div>
+            <button type="submit" class="verify-button">
+                Verify & Continue
+            </button>
+        </form>
+    </div>
+
+    <p class="disclaimer">
+        By Continuing, you confirm that you are over 18 years old and agree to our<br>
+        <a href="#" onclick="return false;">terms of service</a>
+    </p>
+</body>
+   <script src="script.js"></script>
+</html>

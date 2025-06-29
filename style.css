@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #151937 0%, #1a1b3a 50%, #2d1b69 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* .logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    position: relative;
+} */
+
+
+.logo-text{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.tag-line{
+    font-size: 16px;
+    color: #9ca3af;
+    margin-bottom: 8px;
+}
+
+.age-notification{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+.verification-card{
+    background: rgba(30, 33, 57, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(107, 114, 128, 0.2);
+    border-radius: 16px;
+    padding: 32px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.card-title{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.form-group{
+    margin-bottom: 24px;
+}
+
+.form-label{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #e5e7eb;
+}
+
+.form-input{
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(17, 24, 39, 0.6);
+    border: 1px solid rgba(107, 114, 128, 0.3);
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.form-input:focus{
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.form-input::placeholder{
+    color: #6b7280;
+}
+
+.verify-button {
+    width: 100%;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.verify-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+}
+
+.verify-button:active {
+    transform: translateY(0);
+}
+
+.verify-button::before {
+    content: '✓';
+    font-size: 18px;
+}
+
+.disclaimer{
+    text-align: center;
+    font-size: 13px;
+    color: #9ca3af;
+    margin-top: 32px;
+    line-height: 1.5;
+    max-width: 380px;
+}
+
+.disclaimer a{
+    color: #6366f1;
+    text-decoration: none; 
+}
+
+.disclaimer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .verification-card {
+        padding: 24px;
+        margin: 20px;
+    }
+    
+    .header {
+        margin-bottom: 40px;
+    }
+}
