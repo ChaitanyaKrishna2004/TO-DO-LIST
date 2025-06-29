@@ -21,7 +21,7 @@ Design: Custom CSS with gradients and transitions
 
 Clone the repository
 
-bashgit clone https://chaitanyakrishna2004.github.io/TO-DO-LIST/
+bashgit clone [https://chaitanyakrishna2004.github.io/TO-DO-LIST/](https://github.com/ChaitanyaKrishna2004/TO-DO-LIST.git)
 
 Open index.html in your browser
 Complete age verification and start managing tasks!
